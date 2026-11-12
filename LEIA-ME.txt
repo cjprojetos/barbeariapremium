@@ -1,0 +1,17 @@
+THE BARBER — SITE
+
+Como visualizar:
+1. Extraia o arquivo ZIP.
+2. Abra a pasta e clique duas vezes em index.html.
+3. Para melhor experiência, mantenha conexão com a internet (fontes e fotos são carregadas externamente).
+
+Arquivos:
+- index.html: estrutura do site
+- style.css: identidade visual e responsividade
+- script.js: menu, agendamento via WhatsApp, seleção de serviços e carrossel
+
+Antes de publicar:
+- Em script.js, altere WHATSAPP_NUMBER para o número oficial (formato internacional, somente números).
+- Em index.html, substitua endereço, telefone e links das redes sociais.
+- Troque as imagens de demonstração por fotos reais da barbearia, se desejar.
+- O formulário encaminha uma solicitação via WhatsApp; não bloqueia horários nem grava reservas em banco de dados.

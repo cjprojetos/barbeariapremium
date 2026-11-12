@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Barber Premium — mais que um corte, um estilo de vida. Agende seu horário.">
+  <title>The Barber | Barbearia Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="The Barber início">
+        <span class="brand-mark" aria-hidden="true">♛<b>♟</b></span>
+        <span class="brand-copy"><strong>THE BARBER</strong><small>BARBEARIA PREMIUM®</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn-gold nav-cta" href="#agendamento"><span>▦</span> Agendar Horário</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Barbeiro realizando acabamento de barba em cliente"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">THE BARBER PREMIUM</p>
+        <h1>Mais que um corte,<br><em>um estilo de vida.</em></h1>
+        <p class="hero-lead">Cuide da sua aparência, eleve sua autoestima<br class="desktop-only"> e esteja sempre no seu melhor.</p>
+        <a class="btn btn-gold btn-large" href="#agendamento"><span>▦</span> Agendar seu horário <b>→</b></a>
+        <div class="benefits">
+          <div><span class="benefit-icon">♢</span><span>Ambiente Seguro<br>e Climatizado</span></div>
+          <div><span class="benefit-icon">☆</span><span>Profissionais<br>Especializados</span></div>
+          <div><span class="benefit-icon">◇</span><span>Qualidade<br>Garantida</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="servicos">
+      <div class="container">
+        <div class="section-heading">
+          <span></span><div><h2>Nossos Serviços</h2><p>Tudo o que você precisa para se sentir ainda melhor.</p></div><span></span>
+        </div>
+        <div class="service-grid">
+          <button class="service-card" data-service="Corte Masculino"><span class="service-icon">✂</span><strong>Corte<br>Masculino</strong></button>
+          <button class="service-card" data-service="Barba Modelada"><span class="service-icon">♙</span><strong>Barba<br>Modelada</strong></button>
+          <button class="service-card" data-service="Degradê Especializado"><span class="service-icon">♧</span><strong>Degradê<br>Especializado</strong></button>
+          <button class="service-card" data-service="Corte Infantil"><span class="service-icon">♧</span><strong>Corte Infantil</strong></button>
+          <button class="service-card" data-service="Tratamento Facial"><span class="service-icon">✧</span><strong>Tratamento<br>Facial</strong></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-photo" role="img" aria-label="Interior elegante da barbearia"></div>
+        <div class="about-copy">
+          <span class="kicker">SOBRE NÓS</span>
+          <h2>Tradição, estilo e<br>atendimento <em>de qualidade.</em></h2>
+          <p>Somos uma barbearia moderna, com profissionais experientes e apaixonados pelo que fazem. Aqui, você encontra um atendimento personalizado, em um ambiente confortável e estiloso.</p>
+          <a class="btn btn-outline" href="#contato">Conheça mais <b>→</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="agendamento">
+      <div class="container">
+        <form class="booking-card" id="bookingForm">
+          <div class="booking-intro">
+            <span class="calendar-icon">▦</span>
+            <div><h2>Agende seu horário</h2><p>Escolha o melhor horário e venha se cuidar!</p></div>
+          </div>
+          <div class="booking-fields">
+            <label class="sr-only" for="service">Selecione o serviço</label>
+            <select id="service" required>
+              <option value="">Selecione o serviço</option>
+              <option>Corte Masculino</option><option>Barba Modelada</option>
+              <option>Degradê Especializado</option><option>Corte Infantil</option><option>Tratamento Facial</option>
+            </select>
+            <label class="sr-only" for="date">Selecione o dia</label>
+            <input id="date" type="date" required aria-label="Selecione o dia">
+            <label class="sr-only" for="time">Selecione o horário</label>
+            <select id="time" required><option value="">Selecione o horário</option></select>
+            <button class="btn btn-gold booking-submit" type="submit">Agendar Agora <b>→</b></button>
+            <p class="form-note" id="formNote" aria-live="polite">Você será direcionado ao WhatsApp para confirmar sua solicitação.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="depoimentos">
+      <div class="container">
+        <div class="section-heading compact">
+          <span></span><div><h2>Depoimentos</h2><p>O que nossos clientes dizem:</p></div><span></span>
+        </div>
+        <div class="testimonial-wrap">
+          <button class="carousel-arrow prev" aria-label="Depoimento anterior">‹</button>
+          <div class="testimonial-track" id="testimonialTrack">
+            <article class="testimonial"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop&crop=faces" alt="Lucas Ferreira"><div><div class="stars">★★★★★</div><p>“Atendimento top! Profissionais super atenciosos e o resultado sempre impecável!”</p><strong>Lucas Ferreira</strong></div></article>
+            <article class="testimonial"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop&crop=faces" alt="Rafael Souza"><div><div class="stars">★★★★★</div><p>“Melhor barbearia da região! Ambiente incrível e corte perfeito.”</p><strong>Rafael Souza</strong></div></article>
+            <article class="testimonial"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&h=120&fit=crop&crop=faces" alt="Carlos Mendes"><div><div class="stars">★★★★★</div><p>“Sempre saio satisfeito. Recomendo de olhos fechados!”</p><strong>Carlos Mendes</strong></div></article>
+          </div>
+          <button class="carousel-arrow next" aria-label="Próximo depoimento">›</button>
+        </div>
+        <div class="dots" id="carouselDots"><button class="selected" aria-label="Depoimentos 1"></button><button aria-label="Depoimentos 2"></button><button aria-label="Depoimentos 3"></button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">♛<b>♟</b></span>
+        <span class="brand-copy"><strong>THE BARBER</strong><small>BARBEARIA PREMIUM®</small></span>
+      </a>
+      <div class="footer-item"><span>📍</span><p>Rua Exemplo, 123 – Centro<br>São Paulo – SP</p></div>
+      <div class="footer-item"><span>◷</span><p>Seg a Sáb: 09h às 20h</p></div>
+      <a class="footer-item" href="https://wa.me/5511987654321" target="_blank" rel="noopener"><span>◉</span><p>(11) 98765-4321</p></a>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> The Barber. Todos os direitos reservados.</p><small>Desenvolvido com <b>♥</b> por Glamour Web</small></div>
+  </footer>
+  <a class="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
+  <script src="script.js"></script>
+</body>
+</html>
